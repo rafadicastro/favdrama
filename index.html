@@ -10,7 +10,7 @@
     <div class="title" id="title">
         <h1>FAV DRAMA</h1>
     </div>
-   <form class="form">
+   <form id="formCadastro">
         <div class="titulos">
             <h2> Adicionar Série </h2>
         </div>
@@ -18,26 +18,25 @@
         
         <div class="adicionarNome">
             <label><strong>Nome</strong></label>
-            <input class="nome" placeholder="Digite o nome da Serie" type="text">
+            <input id="inputNome" class="nome" placeholder="Digite o nome da Serie" type="text">
         </div>
         </br>
 
         <div class="adicionarGenero">
             <label><strong>Genero</strong></label>
-            <input class="genero" placeholder="Digite o genero da Serie" type="text">
+            <input id="inputGenero" class="genero" placeholder="Digite o genero da Serie" type="text">
         </div>
         </br>
 
         <div class="adicionarFavoritos">
-            <label><strong>Favoritos</strong></label>
-            <input class="favoritos" placeholder="Adicione aqui os fatos que você mais gostou!" type="text">
+            <label class="labelFavoritos" id="lavelFavoritos"><strong>Favoritos</strong></label>
+            <input id="inputFavoritos" class="favoritos" placeholder="Adicione aqui os fatos que você mais gostou!" type="text">
         </div>
         <small id="msgErro"> </small>
 
-        <div>
-            <button id="salvar" class="botao" type="button">Salvar</button>
-        </div>
+        <button id="salvar" class="botao"  type="submit">Salvar</button>
+        <button id="mostrar" class="botao" onclick="mostrarItem()" type="button">Mostrar</button>
    </form>
-   <script src="index.js"></script>
+   <script src="index.js" defer></script>
 </body>
 </html>
